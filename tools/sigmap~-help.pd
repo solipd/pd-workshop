@@ -1,0 +1,12 @@
+#N canvas 169 354 674 300 10;
+#X obj 137 144 sigmap~ -in 0 1 -out 0 1000;
+#X obj 136 115 phasor~ 0.5;
+#X obj 137 167 unsig~;
+#X floatatom 137 190 5 0 0 0 - - - 0;
+#X text 83 32 signal mapper;
+#X msg 340 37 \; pd dsp 1;
+#X msg 296 113 in -1 1 \, out 0 1;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 6 0 0 1;
